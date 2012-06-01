@@ -1,3 +1,25 @@
+# Ignore everything save dotfiles
 /*
 !.*
+# Excluded (history)
 .bash_history
+.mysql_history
+.viminfo
+.lesshst
+# Excluded (security)
+.ssh/authorized_keys
+.ssh/id_rsa
+.ssh/known_hosts
+.gnupg/*.gpg
+.Xauthority
+# Excluded (transitory)
+.aptitude/cache
+.ccache/*
+# Excluded (other)
+.dbus/*
+.fontconfig/*
+.links2/*
+.lyx/*
+.pki/*
+.texmf-var/*
+.w3m/*
