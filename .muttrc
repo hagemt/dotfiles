@@ -1,0 +1,85 @@
+# Base (use Maildir)
+set mbox_type=Maildir
+set mbox="~/Maildir"
+
+set folder="~/Maildir"
+set spoolfile="~/Maildir"
+set mask="!^\\.[^.]"
+
+set record="+.Sent"
+set postponed="+.Drafts"
+
+mailboxes `echo -n "+ "; find ~/Maildir -maxdepth 1 -type d -name ".*" -printf "+'%f' "`
+macro index c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+macro compose A "<attach-message>?<toggle-mailboxes>" "attach message(s) to this message"
+
+# Vimify navigation
+bind pager j next-line
+bind pager k previous-line
+
+# Settings
+unset mark_old
+set abort_nosubject=yes
+set include=ask-yes
+set postpone=ask-yes
+set print=ask-yes
+set signature="~/.signature"
+
+# Display
+ignore *
+unignore from resent-from reply-to x-mailer user-agent date to cc subject
+hdr_order From: Resent-From: Reply-To: X-Mailer: User-Agent: Date: To: Cc: Subject:
+
+set sort=threads
+set indent_str="> "
+unset edit_headers
+
+color index brightyellow default ~N
+color index brightred default ~D
+set collapse_unread=no
+folder-hook . 'push <collapse-all>'
+
+# Lists
+mailboxes ~/Maildir/debian-announce
+subscribe debian-announce
+mailboxes ~/Maildir/debian-infrastructure-announce
+subscribe debian-infrastructure-announce
+mailboxes ~/Maildir/debian-news
+subscribe debian-news
+mailboxes ~/Maildir/debian-research
+subscribe debian-research
+mailboxes ~/Maildir/debian-security-announce
+subscribe debian-security-announce
+mailboxes ~/Maildir/debian-stable-announce
+subscribe debian-stable-announce
+mailboxes ~/Maildir/debian-apache
+subscribe debian-apache
+mailboxes ~/Maildir/debian-devel-announce
+subscribe debian-devel-announce
+mailboxes ~/Maildir/debian-science
+subscribe debian-science
+mailboxes ~/Maildir/debian-changes
+subscribe debian-changes
+mailboxes ~/Maildir/debian-curiosa
+subscribe debian-curiosa
+mailboxes ~/Maildir/debian-events-na
+subscribe debian-events-na
+mailboxes ~/Maildir/debian-jobs
+subscribe debian-jobs
+mailboxes ~/Maildir/debian-legal
+subscribe debian-legal
+mailboxes ~/Maildir/debian-women
+subscribe debian-women
+
+# View contacts
+
+set query_command="abook --mutt-query '%s'"
+macro index a "|abook --add-email\n" 'add sender to abook'
+macro pager a "|abook --add-email\n" 'add sender to abook'
+
+# View URLs
+macro index \cb "|urlview\n"
+macro pager \cb "|urlview\n"
