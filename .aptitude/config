@@ -1,0 +1,3 @@
+aptitude "";
+aptitude::Keep-Unused-Pattern "";
+aptitude::Delete-Unused-Pattern "";
