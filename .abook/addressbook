@@ -1,0 +1,19 @@
+# abook addressbook file
+
+[format]
+program=abook
+version=0.5.6
+
+
+[0]
+name=Annette Hagemann
+email=ahagemann2@wi.rr.com
+
+[1]
+name=Tor E Hagemann
+email=hagemt@rpi.edu
+
+[2]
+name=Birgitte Connie Viborg
+email=bcv@adm.dtu.dk
+
