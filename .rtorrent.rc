@@ -1,0 +1,17 @@
+max_peers = 64
+max_peers_seed = 32
+max_uploads = 8
+download_rate = 256
+upload_rate = 128
+directory = ~/.torrents
+session = ~/.torrents/.session
+bind = caspar.magi.local
+ip = 107.8.173.54
+port_range = 49621-49628
+port_random = yes
+check_hash = yes
+use_udp_trackers = yes
+encryption = allow_incoming,try_outgoing,require,enable_retry
+dht = auto
+dht_port = 49629
+peer_exchange = yes
