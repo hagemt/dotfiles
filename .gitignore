@@ -10,7 +10,11 @@
 .ssh/authorized_keys
 .ssh/id_rsa
 .ssh/known_hosts
-.gnupg/*.gpg
+.gnupg/*.gpg~
+.gnupg/pubring.gpg
+.gnupg/secring.gpg
+.gnupg/trustdb.gpg
+.gnupg/random_seed
 .Xauthority
 # Excluded (transitory)
 .aptitude/cache
