@@ -16,14 +16,15 @@
 .gnupg/trustdb.gpg
 .gnupg/random_seed
 .Xauthority
+.linuxcounter/onetooneandon.to
 # Excluded (transitory)
 .aptitude/cache
 .ccache/*
+.torrents/.session/*
 # Excluded (other)
-.dbus/*
-.fontconfig/*
-.links2/*
-.lyx/*
-.pki/*
-.texmf-var/*
+.minecraft/*.jar
+.minecraft/*.zip
+.minecraft/server.log*
+.minecraft/freja/*
+.minecraft/overviewer*
 .w3m/*
