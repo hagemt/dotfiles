@@ -1,3 +1,10 @@
 [user]
 	name = Tor E Hagemann
 	email = hagemt@rpi.edu
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	file-view-hpane-position = 485
+	main-window-view = FileView
+	history-view-vpane-position = 204
+	file-view-vpane-position = 884
