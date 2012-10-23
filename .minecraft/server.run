@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/opt/jdk1.8.0/bin/java -Xms1G -Xmx2G -jar minecraft_server.jar nogui
