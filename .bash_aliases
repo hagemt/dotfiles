@@ -20,3 +20,18 @@ alias ragequit='sudo /sbin/shutdown -r now'
 alias g='git status'
 alias get='git fetch origin --prune'
 alias inflict='git push origin'
+# Java
+alias java8='~/Downloads/Code/jdk1.8.0/bin/java'
+alias timer='java -cp ~/.workspace/Timer/bin edu.rpi.rcos.tools.JTimer'
+# Mathematics
+alias maple='/opt/maple/bin/xmaple'
+alias matlab='/opt/matlab/bin/matlab'
+# Minecraft
+alias minecraft='java -Xms1G -Xmx2G -cp ~/.minecraft/minecraft.jar net.minecraft.LauncherFrame'
+# Networking
+alias poderosa='~/Downloads/Work/networking/scripts/multi_connect.sh'
+# Programming Languages
+alias oz='linux32 ~/Downloads/Work/proglang/hw2/mozart/bin/oz'
+alias salsac='java -cp ~/.workspace/salsa1.1.4.jar:. salsac.SalsaCompiler'
+alias javacs='javac -cp ~/.workspace/salsa1.1.4.jar:.'
+alias salsa='java -cp ~/.workspace/salsa1.1.4.jar:.'
