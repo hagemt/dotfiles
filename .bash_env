@@ -1,0 +1,2 @@
+export OPT_PATH=/opt
+export LD_LIBRARY_PATH=.:./lib:../lib:$OPT_PATH/lib:$LD_LIBRARY_PATH

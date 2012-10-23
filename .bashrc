@@ -10,6 +10,11 @@
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoreboth
+# Ignore all commands starting with whitespace, or listed here
+HISTIGNORE="[ \t]*:g:l:la:ll:ls:fg:bg:jobs:exit"
+# Store up to 10K commands in ~/.bash_history
+HISTFILE=~/.bash_history
+HISTSIZE=10240
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -81,6 +86,12 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+
+# Environment definitions.
+# Load some important variables or somesuch, before aliases.
+if [ -f ~/.bash_env ]; then
+  . ~/.bash_env
+fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
