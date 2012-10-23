@@ -1,30 +1,49 @@
-# Ignore everything save dotfiles
+### Ignore everything, save dotfiles
 /*
 !.*
-# Excluded (history)
+
+### Re-excluded Files
+
+## Category: history
 .bash_history
 .mysql_history
 .viminfo
 .lesshst
-# Excluded (security)
+
+## Category: security
+# SSH keys/certs/etc, private
+.ssh/*.crt
+.ssh/*.csr
+.ssh/*.key
 .ssh/authorized_keys
 .ssh/id_rsa
 .ssh/known_hosts
+# Keyrings, private
+.gnupg/*.gpg
 .gnupg/*.gpg~
-.gnupg/pubring.gpg
-.gnupg/secring.gpg
-.gnupg/trustdb.gpg
 .gnupg/random_seed
 .Xauthority
 .linuxcounter/onetooneandon.to
-# Excluded (transitory)
+.subversion/auth/*
+
+# Category: session/cache
 .aptitude/cache
 .ccache/*
+.dbus/*
+.slocdata/*
 .torrents/.session/*
-# Excluded (other)
+
+## Category: minecraft
 .minecraft/*.jar
 .minecraft/*.zip
 .minecraft/server.log*
 .minecraft/freja/*
 .minecraft/overviewer*
+
+## Category: applications
 .w3m/*
+# Pathogen manages ~/.vim/
+.vim/*
+# Unknown 
+.pki/*
+.rnd
