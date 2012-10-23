@@ -26,7 +26,7 @@ shopt -s histappend
 shopt -s checkwinsize
 
 # make less more friendly for non-text input files, see lesspipe(1)
-#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
@@ -112,3 +112,8 @@ fi
 export FORTUNE_CMD=$(which fortune)
 export FORTUNE_FLAGS='-a'
 [ -x "$FORTUNE_CMD" ] && $FORTUNE_CMD $FORTUNE_FLAGS
+
+# Oh, Jerry.
+#alias forking-terminal='gnome-terminal --tab --title="Hardcore Forking Action"'
+#forking-terminal --command="forking-terminal"
+##exit
