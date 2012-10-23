@@ -97,3 +97,7 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+export FORTUNE_CMD=$(which fortune)
+export FORTUNE_FLAGS='-a'
+[ -x "$FORTUNE_CMD" ] && $FORTUNE_CMD $FORTUNE_FLAGS
