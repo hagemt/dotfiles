@@ -22,3 +22,6 @@ cmap w!! %!sudo tee > /dev/null %
 " Mappings
 map <F1> :previous<CR> " F1 opens previous buffer
 map <F2> :next<CR>     " F2 opens next buffer
+
+" Pathogen
+call pathogen#infect()
