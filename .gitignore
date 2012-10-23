@@ -22,9 +22,12 @@
 .gnupg/*.gpg
 .gnupg/*.gpg~
 .gnupg/random_seed
-.Xauthority
+# Other auth/seed/cookies
 .linuxcounter/onetooneandon.to
+.pki/*
+.rnd
 .subversion/auth/*
+.Xauthority
 
 # Category: session/cache
 .aptitude/cache
@@ -44,6 +47,10 @@
 .w3m/*
 # Pathogen manages ~/.vim/
 .vim/*
-# Unknown 
-.pki/*
-.rnd
+# Don't want to bother with these right now
+.*.bak
+.gem/*
+.gitk
+.htoprc
+.lyx/*
+.texmf-var/*
