@@ -8,3 +8,5 @@
 	main-window-view = FileView
 	history-view-vpane-position = 204
 	file-view-vpane-position = 884
+[color]
+	ui = auto
