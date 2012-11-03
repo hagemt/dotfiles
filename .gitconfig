@@ -10,3 +10,5 @@
 	file-view-vpane-position = 884
 [color]
 	ui = auto
+[merge]
+	tool = vimdiff
