@@ -9,6 +9,7 @@
 .mysql_history
 .viminfo
 .lesshst
+*.log
 
 ## Category: security
 # SSH keys/certs/etc, private
@@ -37,14 +38,18 @@
 .torrents/.session/*
 
 ## Category: minecraft
-.minecraft/*.jar
-.minecraft/*.zip
+.minecraft/*.jar*
+.minecraft/*.zip*
 .minecraft/server.log*
 .minecraft/freja/*
 .minecraft/overviewer*
 
 ## Category: applications
 .w3m/*
+# Hackage uses Cabal
+.cabal/*
+!.cabal/config
+.ghc/i386-linux-6.12.1/package.conf.d/*.cache
 # Pathogen manages ~/.vim/
 .vim/*
 # Don't want to bother with these right now
