@@ -110,5 +110,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export FORTUNE_CMD=$(which fortune)
-export FORTUNE_FLAGS='-a'
+export FORTUNE_FLAGS='-a -c -s'
+# Add cowsay if possible
 [ -x "$FORTUNE_CMD" ] && $FORTUNE_CMD $FORTUNE_FLAGS
