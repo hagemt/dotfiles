@@ -14,14 +14,15 @@ filetype plugin on
 filetype indent on
 
 " Tabbing
-set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
+set smarttab
 
 " Functions
 cmap w!! %!sudo tee > /dev/null %
 
 " Mappings
-map <F1> :previous<CR> " F1 opens previous buffer
-map <F2> :next<CR>     " F2 opens next buffer
+map <F11> :previous<CR> " F11 opens previous buffer
+map <F12> :next<CR>     " F12 opens next buffer
+map <F5>  :!./%<CR>     " F5  runs the current file
 
 " Pathogen
 call pathogen#infect()
