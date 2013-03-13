@@ -1,2 +1,2 @@
-export OPT_PATH=/opt
-export LD_LIBRARY_PATH=.:./lib:../lib:$OPT_PATH/lib:$LD_LIBRARY_PATH
+export PATH=/opt/bin:/usr/lib/ccache:$PATH
+export LD_LIBRARY_PATH=/opt/lib32:/opt/lib:/usr/local/lib
